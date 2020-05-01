@@ -1,20 +1,28 @@
 import React from 'react';
 
+import { useTranslation } from 'react-i18next';
+
 import 'bootstrap';
 import './styles/application.scss';
 
 function App() {
+  const { t, i18n } = useTranslation();
+
+  function changeLanguage(lang) {
+    i18n.changeLanguage(lang);
+  };
+
   return (
     <section className="App">
-      <header className="App-header">
-      </header>
       <section className="app-body">
+      <div className="btn-group">
+        <button onClick={() => { changeLanguage("en_us")} } className="btn btn-outline-secondary">EN-US</button>
+        <button onClick={() => { changeLanguage("pt_br")} } className="btn btn-outline-primary" >PT-BR</button>
+      </div>
+
         <h1>
-          Em construção.
+          {t('construction')}
         </h1>
-        <h2>
-          Under construction.
-        </h2>
       </section>
     </section>
   );
