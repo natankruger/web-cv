@@ -1,0 +1,21 @@
+@import 'bootstrap';
+@import './variables.scss';
+
+.App {
+  text-align: center;
+  height: 100%;
+
+  .app-body {
+    background-color: $bg-dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100%;
+  }
+
+  .app-link {
+    color: $link;
+  }
+}
