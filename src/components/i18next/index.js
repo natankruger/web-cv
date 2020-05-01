@@ -6,12 +6,16 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en_us: {
     translation: {
-      "construction": "Under construction"
+      "construction": "Under construction",
+      "light-mode": "Light mode",
+      "dark-mode": "Dark mode",
     }
   },
   pt_br: {
     translation: {
-      "construction": "Em construção"
+      "construction": "Em construção",
+      "light-mode": "Modo claro",
+      "dark-mode": "Modo escuro",
     }
   }
 };
