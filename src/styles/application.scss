@@ -1,8 +1,7 @@
-@import 'bootstrap';
-
 .dark-app {
   @import './dark-mode-variables.scss';
   @import './reboot.scss';
+  @import 'bootstrap';
 
   text-align: center;
   height: 100%;
@@ -10,6 +9,7 @@
 .light-app {
   @import './light-mode-variables.scss';
   @import './reboot.scss';
+  @import 'bootstrap';
 
   text-align: center;
   height: 100%;
