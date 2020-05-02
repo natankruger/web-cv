@@ -1,22 +1,17 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
+import en_us from "./languages/en-us"
+import pt_br from "./languages/pt-br"
+
 // the translations
 // (tip move them in a JSON file and import them)
 const resources = {
   en_us: {
-    translation: {
-      "construction": "Under construction",
-      "light-mode": "Light mode",
-      "dark-mode": "Dark mode",
-    }
+    translation: en_us
   },
   pt_br: {
-    translation: {
-      "construction": "Em construção",
-      "light-mode": "Modo claro",
-      "dark-mode": "Modo escuro",
-    }
+    translation: pt_br
   }
 };
 
@@ -24,7 +19,7 @@ i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: "pt_br",
+    lng: "pt_br", // default language TODO - get language from browser
     keySeparator: false, // we do not use keys in form messages.welcome
     interpolation: {
       escapeValue: false // react already safes from xss
