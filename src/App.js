@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Navbar from './components/navbar';
+import Biography from './components/biography';
 
 import 'bootstrap';
 import './styles/application.scss';
@@ -16,6 +17,7 @@ function App() {
         <Navbar />
       </header>
       <main className="app-body">
+        <Biography bio={t('biograpy-description')} />
         <h1>
           {t('construction')}
         </h1>

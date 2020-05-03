@@ -13,9 +13,16 @@
   color: $text-color;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 100%;
+
+  .biography {
+    .profile-pic {
+      width: 200px;
+      border: 1px solid $secondary;
+      border-radius: 50%;
+    }
+  }
+
 }
 
 .app-link {

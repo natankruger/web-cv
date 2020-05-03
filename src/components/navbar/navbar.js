@@ -34,7 +34,7 @@ function Navbar() {
       <button id="eng-btn" onClick={() => { changeLanguage("en_us")} } className="btn btn-outline-secondary">
         English
       </button>
-      <button id="por-btn" onClick={() => { changeLanguage("pt_br")} } className="btn btn-outline-primary d-none" >
+      <button id="por-btn" onClick={() => { changeLanguage("pt_br")} } className="btn btn-outline-secondary d-none" >
         Português
       </button>
 
