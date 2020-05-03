@@ -6,7 +6,7 @@ class Timeline extends React.Component {
   listWorks() {
     let t = this.props.t;
 
-    let list = works.reverse().map((item, key) => {
+    let list = works.map((item) => {
       return <li className="job-item mt-2">
           <h3>
             { item.companyName }
