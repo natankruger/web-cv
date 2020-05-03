@@ -29,8 +29,26 @@
     }
   }
 
+  .timeline {
+    .jobs-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+
+      .job-item {
+        max-width: 500px;
+        border-top: 1px solid $secondary;
+      }
+    }
+  }
+
 }
 
 .app-link {
   color: $link;
+}
+
+.text-muted {
+  font-size: 12px;
 }

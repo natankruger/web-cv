@@ -7,7 +7,7 @@ class Biography extends React.Component {
 
     return <section className="biography mt-3" >
       <div>
-        <img src={ profilePicUrl } className="profile-pic" />
+        <img src={ profilePicUrl } className="profile-pic" alt="Profile Natan face" />
       </div>
       <div className="mt-3">
         <p>

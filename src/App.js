@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Navbar from './components/navbar';
 import Biography from './components/biography';
 import Skills from './components/skills';
+import TimeLine from './components/timeline';
 
 import 'bootstrap';
 import './styles/application.scss';
@@ -18,11 +19,12 @@ function App() {
         <Navbar />
       </header>
       <main className="app-body">
-        <Biography bio={t('biograpy-description')} />
-        <Skills />
         <h1>
           {t('construction')}
         </h1>
+        <Biography bio={t('biograpy-description')} />
+        <Skills />
+        <TimeLine t={t.bind(this)} />
       </main>
     </section>
   );
