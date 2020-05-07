@@ -14,7 +14,7 @@ function App() {
 
 
   return (
-    <section id="cv-app" className="light-app">
+    <section>
       <header className="app-header pt-3">
         <Navbar />
       </header>

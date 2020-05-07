@@ -3,8 +3,9 @@
   @import './reboot.scss';
   @import 'bootstrap';
 
+  background-color: $background-color;
+  color: $text-color;
   text-align: center;
-  height: 100%;
 }
 
 .light-app {
@@ -12,6 +13,7 @@
   @import './reboot.scss';
   @import 'bootstrap';
 
+  background-color: $background-color;
+  color: $text-color;
   text-align: center;
-  height: 100%;
 }

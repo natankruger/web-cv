@@ -6,8 +6,8 @@ class Timeline extends React.Component {
   listWorks() {
     let t = this.props.t;
 
-    let list = works.map((item) => {
-      return <li className="job-item mt-2">
+    let list = works.map((item, key) => {
+      return <li className="job-item mt-2" key={ `timeline-item-${key}` } >
           <h3>
             { item.companyName }
           </h3>
@@ -20,7 +20,7 @@ class Timeline extends React.Component {
         </li>
     });
 
-    return <ul className="jobs-list">
+    return <ul className="jobs-list p-0">
         { list }
     </ul>
   }

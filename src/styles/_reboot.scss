@@ -1,7 +1,7 @@
 
 .app-header {
-  background-color: $background-color;
-  color: $text-color;
+  background-color: inherit;
+  color: inherit;
 
   .btn {
     min-width: 120px;
@@ -9,8 +9,8 @@
 }
 
 .app-body {
-  background-color: $background-color;
-  color: $text-color;
+  background-color: inherit;
+  color: inherit;
   display: flex;
   flex-direction: column;
   height: 100%;
