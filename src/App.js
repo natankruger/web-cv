@@ -23,7 +23,7 @@ function App() {
           {t('construction')}
         </h1>
         <Biography bio={t('biograpy-description')} />
-        <Skills />
+        <Skills t={t.bind(this)} />
         <TimeLine t={t.bind(this)} />
       </main>
     </section>
