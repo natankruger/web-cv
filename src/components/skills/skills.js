@@ -15,10 +15,10 @@ class Skills extends React.Component {
         </li>
     });
 
-    return <ul className="skills-list">
-      <p>
+    return <ul className="skills-list p-0 mt-2">
+      <h3>
         {t("skills")}
-      </p>
+      </h3>
       {list}
   </ul>
   }
