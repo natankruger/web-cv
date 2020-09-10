@@ -23,10 +23,6 @@ const skills = [
     name: "Java",
     level: ""
   },
-  {
-    name: "AngularJS",
-    level: ""
-  },
 ];
 
 export default skills;
