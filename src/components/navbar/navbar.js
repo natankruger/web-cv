@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { useTranslation } from 'react-i18next';
 
@@ -46,8 +47,8 @@ function Navbar() {
         { t('dark-mode') }
       </button>
 
-      <a href="responsive_table" className="btn btn-outline-secondary ml-2">Responsive table</a>
-      <a href="/" className="btn btn-outline-secondary ml-2">Natan cv</a>
+      <Link to={ { pathname: "/responsive_table" } } className="btn btn-outline-secondary ml-2">Responsive table</Link>
+      <Link to={ { pathname: "/" } } className="btn btn-outline-secondary ml-2">Natan cv</Link>
     </nav>
   );
 }

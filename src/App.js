@@ -14,17 +14,17 @@ function App() {
 
   return (
     <section>
-      <header className="app-header pt-3">
-        <Navbar />
-      </header>
-      <main className="app-body">
       <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={ () => <Main t={ t.bind(this) } /> } />
-          <Route exact path="/responsive_table" component={ () => <ResponsiveTable t={ t.bind(this) } /> } />
-        </Switch>
+        <header className="app-header pt-3">
+          <Navbar />
+        </header>
+        <main className="app-body">
+          <Switch>
+            <Route exact path="/" component={ () => <Main t={ t.bind(this) } /> } />
+            <Route exact path="/responsive_table" component={ () => <ResponsiveTable t={ t.bind(this) } /> } />
+          </Switch>
+        </main>
       </BrowserRouter>
-      </main>
     </section>
   );
 }
