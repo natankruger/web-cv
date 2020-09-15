@@ -39,12 +39,15 @@ function Navbar() {
       </button>
 
       <button id="light-btn" onClick={() => { changeColorMode("light-app")} } className="btn btn-outline-primary ml-2 d-none">
-      {t('light-mode')}
+        { t('light-mode') }
       </button>
 
       <button id="dark-btn" onClick={() => { changeColorMode("dark-app")} } className="btn btn-outline-secondary ml-2" >
-      {t('dark-mode')}
+        { t('dark-mode') }
       </button>
+
+      <a href="responsive_table" className="btn btn-outline-secondary ml-2">Responsive table</a>
+      <a href="/" className="btn btn-outline-secondary ml-2">Natan cv</a>
     </nav>
   );
 }
