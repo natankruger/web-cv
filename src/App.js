@@ -1,11 +1,9 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import Navbar from './components/navbar';
-import Biography from './components/biography';
-import Skills from './components/skills';
-import TimeLine from './components/timeline';
-import Contact from './components/contact';
+import Main from './pages/main';
 
 import 'bootstrap';
 import './styles/application.scss';
@@ -19,10 +17,11 @@ function App() {
         <Navbar />
       </header>
       <main className="app-body">
-        <Contact />
-        <Biography bio={t('biograpy-description')} />
-        <Skills t={t.bind(this)} />
-        <TimeLine t={t.bind(this)} />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={ () => <Main t={ t.bind(this) } /> } />
+        </Switch>
+      </BrowserRouter>
       </main>
     </section>
   );
