@@ -1,8 +1,15 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+
+$gray: #808000;
+
 .responsive-table {
   display: flex;
 
   thead {
     th {
+      text-align: left;
       width: 100%;
       min-width: 100px;
     }
@@ -11,6 +18,7 @@
   tbody {
     tr {
       margin-bottom: 5px;
+      text-align: left;
 
       td {
         display: flex;
@@ -36,6 +44,7 @@
   .responsive-table {
     tbody {
       tr {
+        margin-top: 5px;
         border-top: 1px solid $gray;
       }
     }

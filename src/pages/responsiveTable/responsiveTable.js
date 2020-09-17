@@ -7,22 +7,34 @@ class ResponsiveTable extends React.Component {
   render() {
 
     return <section className="mx-auto">
-    <table>
-      <thead>
-        <tr>
+    <table className="responsive-table flex-md-column flex-row mt-4">
+      <thead className="d-none d-md-flex">
+        <tr className="d-flex w-100">
           <th>Nome</th>
           <th>Sobrenome</th>
           <th>Aniversário</th>
-          <th>email</th>
+          <th>Email</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>{ faker.name.firstName() }</td>
-          <td>{ faker.name.lastName() }</td>
-          <td>{ faker.date.past().toDateString() }</td>
-          <td>{ faker.internet.email() }</td>
-        </tr>
+      <tbody className="w-100">
+          <tr className="d-flex flex-column flex-md-row">
+            <td>
+              <span className="item-caption d-flex d-md-none d-sm-flex">Nome</span>
+              <span className="item-content ml-auto ml-md-0">{ faker.name.firstName() }</span>
+            </td>
+            <td>
+              <span className="item-caption d-flex d-md-none d-sm-flex">Sobrenome</span>
+              <span className="item-content ml-auto ml-md-0">{ faker.name.lastName() }</span>
+            </td>
+            <td>
+              <span className="item-caption d-flex d-md-none d-sm-flex">Aniversário</span>
+              <span className="item-content ml-auto ml-md-0">{ faker.date.past().toDateString() }</span>
+            </td>
+            <td>
+              <span className="item-caption d-flex d-md-none d-sm-flex">Email</span>
+              <span className="item-content ml-auto ml-md-0">{ faker.internet.email() }</span>
+            </td>
+          </tr>
       </tbody>
     </table>
     </section>
