@@ -1,0 +1,41 @@
+<table class="responsive-table flex-md-column flex-row">
+  <thead class="d-none d-md-flex">
+    <tr class="d-flex w-100">
+      <th class="d-none d-md-flex icon-column"></th>
+      <th>Data</th>
+      <th>Tipo de transação</th>
+      <th>Valor</th>
+      <th>Expira em</th>
+      <th>Saldo na data</th>
+    </tr>
+  </thead>
+  <tbody class="w-100">
+    <% @loyalty_transactions.each do |loyalty_transaction| %>
+      <tr class="d-flex flex-column flex-md-row">
+        <td class="d-none d-md-flex icon-column">
+          <i class="<%= transaction_icon(loyalty_transaction.credit) %>"></i>
+        </td>
+        <td>
+          <span class="item-caption d-flex d-md-none d-sm-flex">Data</span>
+          <span class="item-content ml-auto ml-md-0"><%= l(loyalty_transaction.created_at.to_date) %></span>
+        </td>
+        <td>
+          <span class="item-caption d-flex d-md-none d-sm-flex">Tipo de transação</span>
+          <span class="item-content ml-auto ml-md-0"><%= transaction_type(loyalty_transaction.credit) %></span>
+        </td>
+        <td>
+          <span class="item-caption d-flex d-md-none d-sm-flex">Valor</span>
+          <span class="item-content ml-auto ml-md-0"><%= number_to_currency(loyalty_transaction.value_in_brl.abs) %></span>
+        </td>
+        <td>
+          <span class="item-caption d-flex d-md-none d-sm-flex">Expira em</span>
+          <span class="item-content ml-auto ml-md-0"><%= l(loyalty_transaction.expires_at.to_date) if loyalty_transaction.credit? %></span>
+        </td>
+        <td>
+          <span class="item-caption d-flex d-md-none d-sm-flex">Saldo na data</span>
+          <span class="item-content ml-auto ml-md-0"><%= number_to_currency(loyalty_transaction.current_balance_in_brl) %></span>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
