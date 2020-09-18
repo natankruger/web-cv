@@ -15,7 +15,7 @@ function App() {
   return (
     <section>
       <BrowserRouter>
-        <header className="app-header pt-3">
+        <header className="app-header">
           <Navbar />
         </header>
         <main className="app-body">

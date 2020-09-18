@@ -6,6 +6,68 @@
   .btn {
     min-width: 120px;
   }
+
+  .menu-icon {
+    cursor: pointer;
+    padding: 18px 14px;
+    margin-bottom: 0;
+
+    .navicon {
+      background: $text-color;
+      display: block;
+      height: 3px;
+      position: relative;
+      transition: background 0.2s ease-out;
+      width: 18px;
+    }
+
+    .navicon:before,
+    .navicon:after {
+      background: $text-color;
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all 0.2s ease-out;
+      width: 100%;
+    }
+
+    .navicon:before {
+      top: 5px;
+    }
+
+    .navicon:after {
+      top: -5px;
+    }
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .menu-btn:checked ~ {
+    .menu-icon {
+      background-color: $background-color;
+      border-radius: 50%;
+    }
+
+    .menu-icon .navicon {
+      background: transparent;
+    }
+
+    .menu-icon .navicon:before {
+      transform: rotate(-45deg);
+    }
+
+    .menu-icon .navicon:after {
+      transform: rotate(45deg);
+    }
+
+    .menu-icon:not(.steps) .navicon:before,
+    .menu-icon:not(.steps) .navicon:after {
+      top: 0;
+    }
+  }
 }
 
 .app-body {
@@ -43,6 +105,10 @@
     }
   }
 
+}
+
+button:focus {
+  outline: none !important;
 }
 
 .app-link {
