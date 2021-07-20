@@ -2,7 +2,7 @@ let works = [
   {
     companyName: "FESC",
     jobDescription: "fesc-desc",
-    startedAt: "feb 2020",
+    startedAt: "feb 2021",
     endedAt: "Present"
   },
   {
