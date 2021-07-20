@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 
 import Navbar from './components/navbar';
 import Main from './pages/main';
-import ResponsiveTable from './pages/responsiveTable';
 
 import 'bootstrap';
 import './styles/application.scss';
@@ -21,7 +20,6 @@ function App() {
         <main className="app-body">
           <Switch>
             <Route exact path="/" component={ () => <Main t={ t.bind(this) } /> } />
-            <Route exact path="/responsive_table" component={ () => <ResponsiveTable t={ t.bind(this) } /> } />
           </Switch>
         </main>
       </BrowserRouter>

@@ -7,6 +7,7 @@ const en_us = {
   "opentech-desc": "This company makes a truck tracking system",
   "neomind-desc": "Using Java and AngularJS, Developing a ECM, BPM, Analytics, Social and Portal features, called Fusion that has a full paperless approach.",
   "zygo-desc": "Using Ruby on Rails, Javascript and some React, developing a software that focuses on customer loyalty for restaurants, bars, pubs and etc.",
+  "fesc-desc": "Private health insurance software, acting on frontend development, and as onde of the leater for the frontend internal guild",
   "skills": "Skills",
 }
 

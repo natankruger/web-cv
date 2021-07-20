@@ -7,6 +7,7 @@ const pt_br = {
   "opentech-desc": "Essa empresa faz um software de rastreamento de caminhões.",
   "neomind-desc": "Usando Java e AngularJS, desenvolvendo um ECM, BPM, Analytics, Social e Portal, chamado de Fusion que tem uma pegada de nunca usar papel.",
   "zygo-desc": "Usando Ruby on Rails, Javascript e um pouco de React, desenvolvendo um software que tem como foco a lealdade do cliente para restaurantes, bares, pubs e etc.",
+  "fesc-desc": "Criando um software de plano de saude privado da federação Unimed de SC, atuando como desenvolvedor frontend, e ta,bém como um dos lideres da guilda de frontend.",
   "skills": "Habilidades",
 
 }

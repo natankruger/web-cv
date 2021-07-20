@@ -1,9 +1,15 @@
 let works = [
   {
+    companyName: "FESC",
+    jobDescription: "fesc-desc",
+    startedAt: "feb 2020",
+    endedAt: "Present"
+  },
+  {
     companyName: "Zygo",
     jobDescription: "zygo-desc",
     startedAt: "jul 2019",
-    endedAt: "Present"
+    endedAt: "jan 2021"
   },
   {
     companyName: "Neomind",

@@ -8,6 +8,10 @@ const skills = [
     level: ""
   },
   {
+    name: "VueJs",
+    level: ""
+  },
+  {
     name: "React",
     level: ""
   },
